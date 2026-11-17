@@ -1,36 +1,25 @@
-"""
-TP2 - Part 1: regulate a light bulb from the ambient luminance sensor.
-
-Usage:
-    python part1_light.py            # 10 readings, every 30 s
-    python part1_light.py --discover # print what the API root returns (to find the endpoints)
-
-!! Check the 3 constants below (SENSOR_PATH, BULB_PATH, BULB_METHOD) against the
-   real API before running. The slides do not give the endpoint names.
-"""
 import json
 import os
-import sys
 import time
-from datetime import datetime
-
 import requests
+from datetime import datetime
+from pathlib import Path
+
 
 BASE_URL = "http://10.194.69.214:3671"
 SENSOR_PATH = "/api/v1/sensors/5/luminance"
-BULB_PATH = "/api/v1/dimmers/7"
-BULB_METHOD = "PUT"
-BULB_FIELD = "value"
+DIMMER_PATH = "/api/v1/dimmers/7"
+DIMMER_METHOD = "PUT"
+DIMMER_PARAMETER = "value"
 
 TARGET_LUX = 200
 N_READINGS = 10
 INTERVAL_S = 30
-LOG_FILE = "light_log.json"
 TIMEOUT_S = 10
+LOG_FILE = Path(__file__).resolve().parents[2] / "logs" / "log_part1" / "light_log.json"
 
 
 def extract_number(data):
-    """Return the first numeric value found in a JSON response (int, float or nested dict/list)."""
     if isinstance(data, bool):
         return None
     if isinstance(data, (int, float)):
@@ -71,16 +60,16 @@ def read_luminance():
     return lux
 
 
-def compute_bulb(lux):
+def compute_dimmer(lux):
     if lux >= TARGET_LUX:
         return 0
     value = round((TARGET_LUX - lux) / TARGET_LUX * 99)
-    return max(0, min(99, value))  # stay inside the bulb range 0-99
+    return max(0, min(99, value))
 
 
-def set_bulb(value):
-    r = requests.request(BULB_METHOD, BASE_URL + BULB_PATH,
-                         json={BULB_FIELD: value}, timeout=TIMEOUT_S)
+def set_dimmer(value):
+    r = requests.request(DIMMER_METHOD, BASE_URL + DIMMER_PATH,
+                         json={DIMMER_PARAMETER: value}, timeout=TIMEOUT_S)
     r.raise_for_status()
     return r.status_code
 
@@ -93,17 +82,9 @@ def load_log():
 
 
 def save_log(entries):
+    LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(LOG_FILE, "w", encoding="utf-8") as f:
         json.dump(entries, f, indent=4, ensure_ascii=False)
-
-
-def discover():
-    for path in ("/", "/api", "/sensors", "/devices"):
-        try:
-            r = requests.get(BASE_URL + path, timeout=TIMEOUT_S)
-            print(f"GET {path} -> {r.status_code}\n{r.text[:1000]}\n")
-        except requests.RequestException as e:
-            print(f"GET {path} -> error: {e}\n")
 
 
 def main():
@@ -114,10 +95,10 @@ def main():
                  "datetime": datetime.now().isoformat(timespec="seconds")}
         try:
             lux = read_luminance()
-            bulb = compute_bulb(lux)
-            status = set_bulb(bulb)
-            entry.update({"luminance": lux, "bulb": bulb, "bulb_http_status": status})
-            print(f"[{i + 1}/{N_READINGS}] {entry['datetime']}  lux={lux:.1f}  -> bulb={bulb}")
+            dimmer = compute_dimmer(lux)
+            status = set_dimmer(dimmer)
+            entry.update({"luminance": lux, "dimmer": dimmer, "dimmer_http_status": status})
+            print(f"[{i + 1}/{N_READINGS}] {entry['datetime']}  lux={lux:.1f}  -> dimmer={dimmer}")
         except (requests.RequestException, ValueError) as e:
             entry["error"] = str(e)
             print(f"[{i + 1}/{N_READINGS}] ERROR: {e}")
@@ -126,15 +107,12 @@ def main():
         if i < N_READINGS - 1:
             time.sleep(INTERVAL_S)
     try:
-        set_bulb(0)
-        print("Bulb switched off.")
+        set_dimmer(0)
+        print("Dimmer switched off.")
     except requests.RequestException as e:
-        print(f"Could not switch off the bulb: {e}")
+        print(f"Could not switch off the dimmer: {e}")
     print(f"Done. Log saved to {LOG_FILE}")
 
 
 if __name__ == "__main__":
-    if "--discover" in sys.argv:
-        discover()
-    else:
-        main()
+     main()

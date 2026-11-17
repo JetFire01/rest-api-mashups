@@ -1,0 +1,82 @@
+[
+    {
+        "run": "2026-11-15T15:06:36",
+        "reading": 1,
+        "datetime": "2026-11-15T15:06:36",
+        "luminance": 591.0,
+        "dimmer": 0,
+        "dimmer_http_status": 200
+    },
+    {
+        "run": "2026-11-15T15:06:36",
+        "reading": 2,
+        "datetime": "2026-11-15T15:07:06",
+        "luminance": 591.0,
+        "dimmer": 0,
+        "dimmer_http_status": 200
+    },
+    {
+        "run": "2026-11-15T15:06:36",
+        "reading": 3,
+        "datetime": "2026-11-15T15:07:36",
+        "luminance": 591.0,
+        "dimmer": 0,
+        "dimmer_http_status": 200
+    },
+    {
+        "run": "2026-11-15T15:06:36",
+        "reading": 4,
+        "datetime": "2026-11-15T15:08:07",
+        "luminance": 664.0,
+        "dimmer": 0,
+        "dimmer_http_status": 200
+    },
+    {
+        "run": "2026-11-15T15:06:36",
+        "reading": 5,
+        "datetime": "2026-11-15T15:08:37",
+        "luminance": 664.0,
+        "dimmer": 0,
+        "dimmer_http_status": 200
+    },
+    {
+        "run": "2026-11-15T15:06:36",
+        "reading": 6,
+        "datetime": "2026-11-15T15:09:07",
+        "luminance": 664.0,
+        "dimmer": 0,
+        "dimmer_http_status": 200
+    },
+    {
+        "run": "2026-11-15T15:06:36",
+        "reading": 7,
+        "datetime": "2026-11-15T15:09:38",
+        "luminance": 664.0,
+        "dimmer": 0,
+        "dimmer_http_status": 200
+    },
+    {
+        "run": "2026-11-15T15:06:36",
+        "reading": 8,
+        "datetime": "2026-11-15T15:10:08",
+        "luminance": 664.0,
+        "dimmer": 0,
+        "dimmer_http_status": 200
+    },
+    {
+        "run": "2026-11-15T15:06:36",
+        "reading": 9,
+        "datetime": "2026-11-15T15:10:38",
+        "luminance": 664.0,
+        "dimmer": 0,
+        "dimmer_http_status": 200
+    },
+    {
+        "run": "2026-11-15T15:06:36",
+        "reading": 10,
+        "datetime": "2026-11-15T15:11:08",
+        "luminance": 664.0,
+        "dimmer": 0,
+        "dimmer_http_status": 200
+    }
+]

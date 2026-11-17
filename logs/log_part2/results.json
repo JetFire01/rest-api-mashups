@@ -1,0 +1,2723 @@
+[
+    {
+        "datetime": "2026-11-15 12:52:46",
+        "scenario": "user report",
+        "input": {
+            "query": "23"
+        },
+        "result": {
+            "user": {
+                "id": 23,
+                "name": "Chloe Morales",
+                "email": "chloe.morales@x.dummyjson.com",
+                "role": "user"
+            },
+            "attempts": [
+                {
+                    "time": "2026-01-17 17:45:09",
+                    "ip": "188.60.10.33",
+                    "status": "success"
+                },
+                {
+                    "time": "2026-01-29 00:58:10",
+                    "ip": "92.104.66.200",
+                    "status": "fail"
+                },
+                {
+                    "time": "2026-01-31 10:38:51",
+                    "ip": "151.248.30.66",
+                    "status": "success"
+                },
+                {
+                    "time": "2026-02-16 10:01:38",
+                    "ip": "213.55.240.8",
+                    "status": "fail"
+                },
+                {
+                    "time": "2026-06-11 18:08:09",
+                    "ip": "185.242.226.126",
+                    "status": "fail",
+                    "blocklisted": "ISC attack reports"
+                },
+                {
+                    "time": "2026-08-20 20:42:52",
+                    "ip": "46.140.12.9",
+                    "status": "success"
+                },
+                {
+                    "time": "2026-10-03 01:19:13",
+                    "ip": "178.197.224.15",
+                    "status": "fail"
+                },
+                {
+                    "time": "2026-10-11 16:19:39",
+                    "ip": "85.5.112.40",
+                    "status": "success"
+                },
+                {
+                    "time": "2026-10-26 06:06:38",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                }
+            ],
+            "summary": {
+                "total": 9,
+                "success": 5,
+                "fail": 4,
+                "from_blocklisted_ips": 2
+            }
+        }
+    },
+    {
+        "datetime": "2026-11-15 12:53:29",
+        "scenario": "user report",
+        "input": {
+            "query": "emily.johnson@x.dummyjson.com"
+        },
+        "result": {
+            "user": {
+                "id": 1,
+                "name": "Emily Johnson",
+                "email": "emily.johnson@x.dummyjson.com",
+                "role": "admin"
+            },
+            "attempts": [
+                {
+                    "time": "2026-01-25 04:48:10",
+                    "ip": "46.140.12.9",
+                    "status": "fail"
+                },
+                {
+                    "time": "2026-04-13 05:17:29",
+                    "ip": "89.206.95.12",
+                    "status": "success"
+                },
+                {
+                    "time": "2026-05-04 17:43:57",
+                    "ip": "178.197.224.15",
+                    "status": "success"
+                },
+                {
+                    "time": "2026-05-14 18:32:22",
+                    "ip": "77.57.14.120",
+                    "status": "fail"
+                },
+                {
+                    "time": "2026-05-16 21:30:55",
+                    "ip": "188.60.10.33",
+                    "status": "success"
+                },
+                {
+                    "time": "2026-06-15 08:43:30",
+                    "ip": "213.55.240.8",
+                    "status": "success"
+                },
+                {
+                    "time": "2026-06-26 18:43:30",
+                    "ip": "213.55.240.8",
+                    "status": "success"
+                },
+                {
+                    "time": "2026-06-30 20:24:23",
+                    "ip": "85.5.112.40",
+                    "status": "fail"
+                },
+                {
+                    "time": "2026-07-18 09:30:16",
+                    "ip": "79.124.59.78",
+                    "status": "fail",
+                    "blocklisted": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "time": "2026-07-18 14:13:03",
+                    "ip": "213.55.240.8",
+                    "status": "fail"
+                },
+                {
+                    "time": "2026-07-20 20:31:28",
+                    "ip": "188.60.10.33",
+                    "status": "success"
+                },
+                {
+                    "time": "2026-08-23 08:32:39",
+                    "ip": "151.248.30.66",
+                    "status": "success"
+                },
+                {
+                    "time": "2026-09-02 18:37:44",
+                    "ip": "213.55.240.8",
+                    "status": "success"
+                },
+                {
+                    "time": "2026-10-10 21:22:49",
+                    "ip": "178.197.224.15",
+                    "status": "fail"
+                },
+                {
+                    "time": "2026-10-19 18:12:46",
+                    "ip": "104.237.150.123",
+                    "status": "fail",
+                    "blocklisted": "ISC attack reports"
+                },
+                {
+                    "time": "2026-10-29 12:06:21",
+                    "ip": "77.57.14.120",
+                    "status": "success"
+                }
+            ],
+            "summary": {
+                "total": 16,
+                "success": 9,
+                "fail": 7,
+                "from_blocklisted_ips": 2
+            }
+        }
+    },
+    {
+        "datetime": "2026-11-15 12:54:08",
+        "scenario": "ip investigation",
+        "input": {
+            "ip": "62.202.180.71"
+        },
+        "result": {
+            "ip": "62.202.180.71",
+            "blocklisted": true,
+            "reason": "feeds: blocklistde22, emergincompromised",
+            "reputation": {
+                "isc": {
+                    "count": null,
+                    "attacks": null,
+                    "feeds": [
+                        "blocklistde22",
+                        "emergincompromised"
+                    ]
+                },
+                "greynoise": {
+                    "classification": "not observed",
+                    "name": null
+                },
+                "checked": "2026-11-14 20:13:10"
+            },
+            "attempts": [
+                {
+                    "time": "2026-01-03 06:23:42",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Hunter Gordon",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-01-08 23:16:08",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Lily Lee",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-01-10 17:10:27",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Michael Williams",
+                    "role": "admin",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-01-23 14:32:30",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Nolan Bryant",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-02-06 23:27:16",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Nora Mills",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-02-08 21:37:45",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Nolan Bryant",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-02-20 10:13:43",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Levi Hicks",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-03-06 10:08:33",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Natalie Harris",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-03-07 12:55:41",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Layla Sullivan",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-03-08 15:46:48",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Nora Mills",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-03-10 14:19:06",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Gavin Stanley",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-03-20 09:04:27",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Eli Bennett",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-05-01 17:00:35",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Daniel Cook",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-05-02 17:11:29",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Harper Kelly",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-05-18 08:30:26",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Daniel Cook",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-06-05 15:03:46",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Levi Hicks",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-06-06 20:20:30",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Carter Baker",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-06-10 23:18:17",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Lillian Simmons",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-06-21 00:24:21",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Isaac Lawrence",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-06-21 13:58:13",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Aaliyah Hanson",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-06-24 02:35:59",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Hazel Gardner",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-06-25 06:51:37",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Harper Turner",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-07-11 21:50:14",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Sofia Mitchell",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-07-17 16:37:24",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Oscar Powers",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-07-18 04:23:12",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Mateo Nguyen",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-07-20 18:20:29",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Scarlett Bowman",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-07-22 05:16:41",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Nora Mills",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-08-04 11:59:16",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Evan Reed",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-08-14 15:05:03",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Ella Adams",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-08-22 17:47:43",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Ethan Martinez",
+                    "role": "moderator",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-09-24 21:20:14",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Nicholas Bailey",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-09-29 23:48:46",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Jack Ward",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-10-16 09:40:30",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Dylan Wells",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-10-17 22:08:13",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Harper Turner",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-10-22 05:49:35",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Stella Hughes",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-10-26 06:06:38",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Chloe Morales",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-10-30 02:17:57",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Levi Hicks",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-11-02 22:54:05",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Hannah Robinson",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-11-06 22:59:46",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Lillian Bishop",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-11-08 06:45:56",
+                    "ip": "62.202.180.71",
+                    "status": "success",
+                    "user": "Lillian Bishop",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "time": "2026-11-10 06:38:47",
+                    "ip": "62.202.180.71",
+                    "status": "fail",
+                    "user": "Nathan Dixon",
+                    "role": "user",
+                    "blocklisted": "feeds: blocklistde22, emergincompromised"
+                }
+            ],
+            "summary": {
+                "total": 41,
+                "success": 23,
+                "different_users": 33
+            }
+        }
+    },
+    {
+        "datetime": "2026-11-15 12:54:52",
+        "scenario": "ip investigation",
+        "input": {
+            "ip": "129.194.8.10"
+        },
+        "result": {
+            "ip": "129.194.8.10",
+            "blocklisted": false,
+            "reason": null,
+            "reputation": {
+                "isc": {
+                    "count": null,
+                    "attacks": null,
+                    "feeds": []
+                },
+                "greynoise": {
+                    "classification": "not observed",
+                    "name": null
+                },
+                "checked": "2026-11-14 20:12:48"
+            },
+            "attempts": [
+                {
+                    "time": "2026-01-08 23:49:26",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Isabella Anderson",
+                    "role": "moderator"
+                },
+                {
+                    "time": "2026-01-10 16:14:52",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Max Russell",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-01-13 06:54:39",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Lillian Bishop",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-01-16 22:54:32",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Eli Bennett",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-02-05 03:00:15",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Olivia Wilson",
+                    "role": "moderator"
+                },
+                {
+                    "time": "2026-02-06 02:20:30",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Mateo Nguyen",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-02-07 09:24:08",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Ethan Fletcher",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-02-10 23:59:12",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Jackson Evans",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-02-20 08:51:20",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Ella Adams",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-03-13 21:11:41",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Nathan Dixon",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-03-14 02:59:57",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Victoria McDonald",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-03-23 03:34:45",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Eleanor Tyler",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-04-03 14:03:42",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Mia Rodriguez",
+                    "role": "moderator"
+                },
+                {
+                    "time": "2026-04-04 02:16:18",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Mason Parker",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-04-14 10:52:24",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Oscar Powers",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-04-23 03:27:29",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Nolan Bryant",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-04-27 04:35:12",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Lila Hudson",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-04-27 22:41:06",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Ava Taylor",
+                    "role": "moderator"
+                },
+                {
+                    "time": "2026-04-29 08:44:28",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Scarlett Bowman",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-05-01 14:07:47",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Aaliyah Hanson",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-05-08 16:00:58",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Miles Stevenson",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-05-17 04:10:13",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Gavin Stanley",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-05-19 21:25:41",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Noah Hernandez",
+                    "role": "moderator"
+                },
+                {
+                    "time": "2026-05-24 17:13:50",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Julian Newton",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-05-26 01:38:12",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Avery Carter",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-05-26 03:17:27",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Avery Barnes",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-05-27 12:21:41",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Zoe Nicholson",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-05-28 00:36:34",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Olivia Wilson",
+                    "role": "moderator"
+                },
+                {
+                    "time": "2026-05-29 01:38:23",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Hannah Robinson",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-05-30 02:21:17",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Lucas Gray",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-06-05 13:32:23",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Benjamin Foster",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-06-09 19:46:29",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Lillian Simmons",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-06-19 13:57:10",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Avery Barnes",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-06-29 13:42:16",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Bella Grant",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-07-02 03:17:41",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Grace Perry",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-07-09 19:56:46",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Hunter Gordon",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-08-04 14:50:33",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Leah Henderson",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-08-09 14:59:27",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Gabriel Adams",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-08-15 12:04:45",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Eli Bennett",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-08-17 13:27:55",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Jackson Evans",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-08-26 13:40:51",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Mason Pearson",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-09-14 11:04:34",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Scarlett Bowman",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-09-26 20:04:29",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Lincoln Kelly",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-10-03 04:19:07",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Austin Hudson",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-10-18 18:55:43",
+                    "ip": "129.194.8.10",
+                    "status": "success",
+                    "user": "Nathan Dixon",
+                    "role": "user"
+                },
+                {
+                    "time": "2026-10-28 00:20:53",
+                    "ip": "129.194.8.10",
+                    "status": "fail",
+                    "user": "Zoe Nicholson",
+                    "role": "user"
+                }
+            ],
+            "summary": {
+                "total": 46,
+                "success": 28,
+                "different_users": 39
+            }
+        }
+    },
+    {
+        "datetime": "2026-11-15 12:55:20",
+        "scenario": "compromised accounts",
+        "input": {
+            "role": "admin"
+        },
+        "result": {
+            "role": "admin",
+            "count": 5,
+            "logins": [
+                {
+                    "role": "admin",
+                    "user": "James Davis",
+                    "email": "james.davis@x.dummyjson.com",
+                    "time": "2026-02-12 17:22:38",
+                    "ip": "185.200.116.72",
+                    "reason": "feeds: blocklistde443, blocklistde80, blocklistdeapache, ciarmy"
+                },
+                {
+                    "role": "admin",
+                    "user": "Sophia Brown",
+                    "email": "sophia.brown@x.dummyjson.com",
+                    "time": "2026-04-27 01:11:54",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "admin",
+                    "user": "James Davis",
+                    "email": "james.davis@x.dummyjson.com",
+                    "time": "2026-05-21 01:34:41",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "admin",
+                    "user": "Emma Miller",
+                    "email": "emma.miller@x.dummyjson.com",
+                    "time": "2026-06-11 14:22:48",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "admin",
+                    "user": "Michael Williams",
+                    "email": "michael.williams@x.dummyjson.com",
+                    "time": "2026-11-04 11:58:03",
+                    "ip": "52.20.198.190",
+                    "reason": "feeds: visionheight"
+                }
+            ]
+        }
+    },
+    {
+        "datetime": "2026-11-15 12:55:40",
+        "scenario": "compromised accounts",
+        "input": {
+            "role": null
+        },
+        "result": {
+            "role": null,
+            "count": 170,
+            "logins": [
+                {
+                    "role": "admin",
+                    "user": "James Davis",
+                    "email": "james.davis@x.dummyjson.com",
+                    "time": "2026-02-12 17:22:38",
+                    "ip": "185.200.116.72",
+                    "reason": "feeds: blocklistde443, blocklistde80, blocklistdeapache, ciarmy"
+                },
+                {
+                    "role": "admin",
+                    "user": "Sophia Brown",
+                    "email": "sophia.brown@x.dummyjson.com",
+                    "time": "2026-04-27 01:11:54",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "admin",
+                    "user": "James Davis",
+                    "email": "james.davis@x.dummyjson.com",
+                    "time": "2026-05-21 01:34:41",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "admin",
+                    "user": "Emma Miller",
+                    "email": "emma.miller@x.dummyjson.com",
+                    "time": "2026-06-11 14:22:48",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "admin",
+                    "user": "Michael Williams",
+                    "email": "michael.williams@x.dummyjson.com",
+                    "time": "2026-11-04 11:58:03",
+                    "ip": "52.20.198.190",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Ella Adams",
+                    "email": "ella.adams@x.dummyjson.com",
+                    "time": "2026-01-04 02:56:43",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Leah Henderson",
+                    "email": "leah.henderson@x.dummyjson.com",
+                    "time": "2026-01-06 03:21:44",
+                    "ip": "185.200.116.72",
+                    "reason": "feeds: blocklistde443, blocklistde80, blocklistdeapache, ciarmy"
+                },
+                {
+                    "role": "user",
+                    "user": "Hazel Gardner",
+                    "email": "hazel.gardner@x.dummyjson.com",
+                    "time": "2026-01-07 18:51:42",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Ethan Fletcher",
+                    "email": "ethan.fletcher@x.dummyjson.com",
+                    "time": "2026-01-08 10:26:45",
+                    "ip": "185.242.226.126",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Carter Baker",
+                    "email": "carter.baker@x.dummyjson.com",
+                    "time": "2026-01-09 22:45:58",
+                    "ip": "173.230.155.151",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "moderator",
+                    "user": "Charlotte Lopez",
+                    "email": "charlotte.lopez@x.dummyjson.com",
+                    "time": "2026-01-15 01:39:34",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Ryan Graham",
+                    "email": "ryan.graham@x.dummyjson.com",
+                    "time": "2026-01-16 03:34:59",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Layla Sullivan",
+                    "email": "layla.sullivan@x.dummyjson.com",
+                    "time": "2026-01-23 01:37:55",
+                    "ip": "173.230.155.151",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Lucas Gordon",
+                    "email": "lucas.gordon@x.dummyjson.com",
+                    "time": "2026-01-23 04:37:29",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Nolan Bryant",
+                    "email": "nolan.bryant@x.dummyjson.com",
+                    "time": "2026-01-23 14:32:30",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Grace Perry",
+                    "email": "grace.perry@x.dummyjson.com",
+                    "time": "2026-01-25 07:56:00",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Christopher West",
+                    "email": "christopher.west@x.dummyjson.com",
+                    "time": "2026-01-25 17:22:00",
+                    "ip": "185.200.116.72",
+                    "reason": "feeds: blocklistde443, blocklistde80, blocklistdeapache, ciarmy"
+                },
+                {
+                    "role": "user",
+                    "user": "Logan Lawson",
+                    "email": "logan.lawson@x.dummyjson.com",
+                    "time": "2026-01-26 13:27:40",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Oscar Powers",
+                    "email": "oscar.powers@x.dummyjson.com",
+                    "time": "2026-02-01 06:19:52",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "user",
+                    "user": "Mateo Nguyen",
+                    "email": "mateo.nguyen@x.dummyjson.com",
+                    "time": "2026-02-02 17:43:21",
+                    "ip": "173.230.155.151",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Logan Lawson",
+                    "email": "logan.lawson@x.dummyjson.com",
+                    "time": "2026-02-03 19:19:30",
+                    "ip": "194.195.208.213",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Dylan Wells",
+                    "email": "dylan.wells@x.dummyjson.com",
+                    "time": "2026-02-04 17:34:40",
+                    "ip": "194.195.208.213",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Ryan Graham",
+                    "email": "ryan.graham@x.dummyjson.com",
+                    "time": "2026-02-06 00:09:44",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "user",
+                    "user": "Aurora Lawson",
+                    "email": "aurora.lawson@x.dummyjson.com",
+                    "time": "2026-02-12 23:03:20",
+                    "ip": "173.230.155.151",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Lucas Gray",
+                    "email": "lucas.gray@x.dummyjson.com",
+                    "time": "2026-02-13 22:45:40",
+                    "ip": "194.195.208.213",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Hunter Gordon",
+                    "email": "hunter.gordon@x.dummyjson.com",
+                    "time": "2026-02-16 01:38:28",
+                    "ip": "185.200.116.72",
+                    "reason": "feeds: blocklistde443, blocklistde80, blocklistdeapache, ciarmy"
+                },
+                {
+                    "role": "user",
+                    "user": "Evelyn Gonzalez",
+                    "email": "evelyn.gonzalez@x.dummyjson.com",
+                    "time": "2026-02-17 12:28:00",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Aubrey Wagner",
+                    "email": "aubrey.wagner@x.dummyjson.com",
+                    "time": "2026-02-18 01:01:37",
+                    "ip": "185.242.226.126",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Layla Sullivan",
+                    "email": "layla.sullivan@x.dummyjson.com",
+                    "time": "2026-02-27 23:30:49",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "moderator",
+                    "user": "Ethan Martinez",
+                    "email": "ethan.martinez@x.dummyjson.com",
+                    "time": "2026-03-01 22:30:17",
+                    "ip": "52.20.198.190",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Victoria McDonald",
+                    "email": "victoria.mcdonald@x.dummyjson.com",
+                    "time": "2026-03-04 07:11:12",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Penelope Harper",
+                    "email": "penelope.harper@x.dummyjson.com",
+                    "time": "2026-03-05 06:02:21",
+                    "ip": "185.242.226.126",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Natalie Harris",
+                    "email": "natalie.harris@x.dummyjson.com",
+                    "time": "2026-03-06 10:08:33",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Carter Baker",
+                    "email": "carter.baker@x.dummyjson.com",
+                    "time": "2026-03-07 04:35:12",
+                    "ip": "194.195.208.213",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Leah Henderson",
+                    "email": "leah.henderson@x.dummyjson.com",
+                    "time": "2026-03-07 12:15:26",
+                    "ip": "185.242.226.126",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Scarlett Bowman",
+                    "email": "scarlett.bowman@x.dummyjson.com",
+                    "time": "2026-03-09 05:29:57",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "moderator",
+                    "user": "Ethan Martinez",
+                    "email": "ethan.martinez@x.dummyjson.com",
+                    "time": "2026-03-10 16:12:36",
+                    "ip": "18.190.15.50",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Miles Stevenson",
+                    "email": "miles.stevenson@x.dummyjson.com",
+                    "time": "2026-03-13 22:14:49",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Owen Fisher",
+                    "email": "owen.fisher@x.dummyjson.com",
+                    "time": "2026-03-15 05:56:14",
+                    "ip": "173.230.155.151",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Avery Barnes",
+                    "email": "avery.barnes@x.dummyjson.com",
+                    "time": "2026-03-15 14:49:27",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Natalie Harris",
+                    "email": "natalie.harris@x.dummyjson.com",
+                    "time": "2026-03-16 20:33:50",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Victoria McDonald",
+                    "email": "victoria.mcdonald@x.dummyjson.com",
+                    "time": "2026-03-17 21:25:28",
+                    "ip": "194.195.208.213",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Isaac Lawrence",
+                    "email": "isaac.lawrence@x.dummyjson.com",
+                    "time": "2026-03-20 12:22:37",
+                    "ip": "52.20.198.190",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "moderator",
+                    "user": "Ethan Martinez",
+                    "email": "ethan.martinez@x.dummyjson.com",
+                    "time": "2026-03-22 10:05:47",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Addison Wright",
+                    "email": "addison.wright@x.dummyjson.com",
+                    "time": "2026-03-26 21:46:41",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Owen Fisher",
+                    "email": "owen.fisher@x.dummyjson.com",
+                    "time": "2026-03-27 19:50:41",
+                    "ip": "18.190.15.50",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Jonathan Pierce",
+                    "email": "jonathan.pierce@x.dummyjson.com",
+                    "time": "2026-03-28 16:20:45",
+                    "ip": "194.195.208.213",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Aria Roberts",
+                    "email": "aria.roberts@x.dummyjson.com",
+                    "time": "2026-03-29 05:35:26",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "user",
+                    "user": "Levi Hicks",
+                    "email": "levi.hicks@x.dummyjson.com",
+                    "time": "2026-03-29 12:03:00",
+                    "ip": "185.200.116.72",
+                    "reason": "feeds: blocklistde443, blocklistde80, blocklistdeapache, ciarmy"
+                },
+                {
+                    "role": "moderator",
+                    "user": "Alexander Jones",
+                    "email": "alexander.jones@x.dummyjson.com",
+                    "time": "2026-03-31 19:22:13",
+                    "ip": "18.190.15.50",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Grace Perry",
+                    "email": "grace.perry@x.dummyjson.com",
+                    "time": "2026-04-02 01:38:36",
+                    "ip": "52.20.198.190",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "moderator",
+                    "user": "Isabella Anderson",
+                    "email": "isabella.anderson@x.dummyjson.com",
+                    "time": "2026-04-06 09:08:24",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Avery Carter",
+                    "email": "avery.carter@x.dummyjson.com",
+                    "time": "2026-04-08 11:11:03",
+                    "ip": "52.20.198.190",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Natalie Harris",
+                    "email": "natalie.harris@x.dummyjson.com",
+                    "time": "2026-04-10 23:31:05",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "user",
+                    "user": "Daniel Cook",
+                    "email": "daniel.cook@x.dummyjson.com",
+                    "time": "2026-04-12 15:51:15",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "user",
+                    "user": "Avery Carter",
+                    "email": "avery.carter@x.dummyjson.com",
+                    "time": "2026-04-15 05:01:30",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Aria Ferguson",
+                    "email": "aria.ferguson@x.dummyjson.com",
+                    "time": "2026-04-17 22:30:26",
+                    "ip": "173.230.155.151",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Gabriel Adams",
+                    "email": "gabriel.adams@x.dummyjson.com",
+                    "time": "2026-04-20 03:54:55",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Ruby Andrews",
+                    "email": "ruby.andrews@x.dummyjson.com",
+                    "time": "2026-04-24 07:18:32",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Julian Newton",
+                    "email": "julian.newton@x.dummyjson.com",
+                    "time": "2026-04-25 00:53:00",
+                    "ip": "173.230.155.151",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Samantha Howard",
+                    "email": "samantha.howard@x.dummyjson.com",
+                    "time": "2026-04-25 11:56:48",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Jacob Cooper",
+                    "email": "jacob.cooper@x.dummyjson.com",
+                    "time": "2026-04-26 02:52:12",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Oscar Powers",
+                    "email": "oscar.powers@x.dummyjson.com",
+                    "time": "2026-04-28 11:44:42",
+                    "ip": "18.190.15.50",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Miles Stevenson",
+                    "email": "miles.stevenson@x.dummyjson.com",
+                    "time": "2026-04-30 22:31:54",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "user",
+                    "user": "Daniel Cook",
+                    "email": "daniel.cook@x.dummyjson.com",
+                    "time": "2026-05-01 17:00:35",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Harper Kelly",
+                    "email": "harper.kelly@x.dummyjson.com",
+                    "time": "2026-05-02 17:11:29",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Hunter Gordon",
+                    "email": "hunter.gordon@x.dummyjson.com",
+                    "time": "2026-05-05 07:01:36",
+                    "ip": "173.230.155.151",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Julian Newton",
+                    "email": "julian.newton@x.dummyjson.com",
+                    "time": "2026-05-05 22:07:17",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "user",
+                    "user": "Lily Lee",
+                    "email": "lily.lee@x.dummyjson.com",
+                    "time": "2026-05-07 03:41:43",
+                    "ip": "185.242.226.126",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Nathan Dixon",
+                    "email": "nathan.dixon@x.dummyjson.com",
+                    "time": "2026-05-10 11:44:36",
+                    "ip": "52.20.198.190",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Lily Lee",
+                    "email": "lily.lee@x.dummyjson.com",
+                    "time": "2026-05-13 06:26:28",
+                    "ip": "52.20.198.190",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Carter Baker",
+                    "email": "carter.baker@x.dummyjson.com",
+                    "time": "2026-05-15 18:22:53",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Stella Hughes",
+                    "email": "stella.hughes@x.dummyjson.com",
+                    "time": "2026-05-16 21:33:06",
+                    "ip": "185.242.226.126",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Daniel Cook",
+                    "email": "daniel.cook@x.dummyjson.com",
+                    "time": "2026-05-18 08:30:26",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Nicholas Bailey",
+                    "email": "nicholas.bailey@x.dummyjson.com",
+                    "time": "2026-05-18 15:25:48",
+                    "ip": "18.190.15.50",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Ruby Andrews",
+                    "email": "ruby.andrews@x.dummyjson.com",
+                    "time": "2026-05-19 06:31:24",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Cameron Burke",
+                    "email": "cameron.burke@x.dummyjson.com",
+                    "time": "2026-05-19 10:46:00",
+                    "ip": "52.20.198.190",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Hazel Gardner",
+                    "email": "hazel.gardner@x.dummyjson.com",
+                    "time": "2026-05-19 21:36:07",
+                    "ip": "52.20.198.190",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Ava Harrison",
+                    "email": "ava.harrison@x.dummyjson.com",
+                    "time": "2026-05-21 09:53:38",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Brayden Fleming",
+                    "email": "brayden.fleming@x.dummyjson.com",
+                    "time": "2026-05-25 00:09:22",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Mason Parker",
+                    "email": "mason.parker@x.dummyjson.com",
+                    "time": "2026-05-27 01:38:59",
+                    "ip": "185.242.226.126",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Henry Hill",
+                    "email": "henry.hill@x.dummyjson.com",
+                    "time": "2026-05-31 18:04:23",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "moderator",
+                    "user": "Isabella Anderson",
+                    "email": "isabella.anderson@x.dummyjson.com",
+                    "time": "2026-06-02 06:26:05",
+                    "ip": "18.190.15.50",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Scarlett Wright",
+                    "email": "scarlett.wright@x.dummyjson.com",
+                    "time": "2026-06-03 08:05:36",
+                    "ip": "18.190.15.50",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Lucas Gordon",
+                    "email": "lucas.gordon@x.dummyjson.com",
+                    "time": "2026-06-04 11:13:33",
+                    "ip": "185.242.226.126",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Levi Hicks",
+                    "email": "levi.hicks@x.dummyjson.com",
+                    "time": "2026-06-05 15:03:46",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Miles Stevenson",
+                    "email": "miles.stevenson@x.dummyjson.com",
+                    "time": "2026-06-06 00:54:24",
+                    "ip": "52.20.198.190",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Carter Baker",
+                    "email": "carter.baker@x.dummyjson.com",
+                    "time": "2026-06-06 20:20:30",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Lillian Simmons",
+                    "email": "lillian.simmons@x.dummyjson.com",
+                    "time": "2026-06-10 23:18:17",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Evelyn Sanchez",
+                    "email": "evelyn.sanchez@x.dummyjson.com",
+                    "time": "2026-06-11 18:26:47",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Ethan Fletcher",
+                    "email": "ethan.fletcher@x.dummyjson.com",
+                    "time": "2026-06-13 19:22:12",
+                    "ip": "185.242.226.126",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Addison Wright",
+                    "email": "addison.wright@x.dummyjson.com",
+                    "time": "2026-06-19 21:16:54",
+                    "ip": "18.190.15.50",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Carter Baker",
+                    "email": "carter.baker@x.dummyjson.com",
+                    "time": "2026-06-20 06:03:24",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Zoe Nicholson",
+                    "email": "zoe.nicholson@x.dummyjson.com",
+                    "time": "2026-06-21 13:30:24",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Aaliyah Hanson",
+                    "email": "aaliyah.hanson@x.dummyjson.com",
+                    "time": "2026-06-21 13:58:13",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "moderator",
+                    "user": "Mia Rodriguez",
+                    "email": "mia.rodriguez@x.dummyjson.com",
+                    "time": "2026-06-21 17:04:15",
+                    "ip": "185.200.116.72",
+                    "reason": "feeds: blocklistde443, blocklistde80, blocklistdeapache, ciarmy"
+                },
+                {
+                    "role": "user",
+                    "user": "Ava Harrison",
+                    "email": "ava.harrison@x.dummyjson.com",
+                    "time": "2026-06-23 09:55:08",
+                    "ip": "18.190.15.50",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Mateo Nguyen",
+                    "email": "mateo.nguyen@x.dummyjson.com",
+                    "time": "2026-06-24 13:50:12",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Oscar Powers",
+                    "email": "oscar.powers@x.dummyjson.com",
+                    "time": "2026-06-26 17:31:07",
+                    "ip": "18.190.15.50",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Logan Lawson",
+                    "email": "logan.lawson@x.dummyjson.com",
+                    "time": "2026-06-27 07:57:15",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Eleanor Tyler",
+                    "email": "eleanor.tyler@x.dummyjson.com",
+                    "time": "2026-06-27 17:08:13",
+                    "ip": "173.230.155.151",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Christopher West",
+                    "email": "christopher.west@x.dummyjson.com",
+                    "time": "2026-07-01 20:14:34",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Brayden Fleming",
+                    "email": "brayden.fleming@x.dummyjson.com",
+                    "time": "2026-07-02 08:26:24",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "user",
+                    "user": "Lily Lee",
+                    "email": "lily.lee@x.dummyjson.com",
+                    "time": "2026-07-07 02:33:56",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Addison Wright",
+                    "email": "addison.wright@x.dummyjson.com",
+                    "time": "2026-07-10 12:00:25",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Jacob Cooper",
+                    "email": "jacob.cooper@x.dummyjson.com",
+                    "time": "2026-07-10 14:47:15",
+                    "ip": "194.195.208.213",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Julian Newton",
+                    "email": "julian.newton@x.dummyjson.com",
+                    "time": "2026-07-11 03:23:58",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Evelyn Sanchez",
+                    "email": "evelyn.sanchez@x.dummyjson.com",
+                    "time": "2026-07-14 02:08:48",
+                    "ip": "52.20.198.190",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Oscar Powers",
+                    "email": "oscar.powers@x.dummyjson.com",
+                    "time": "2026-07-17 16:37:24",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Mateo Nguyen",
+                    "email": "mateo.nguyen@x.dummyjson.com",
+                    "time": "2026-07-18 04:23:12",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Ella Adams",
+                    "email": "ella.adams@x.dummyjson.com",
+                    "time": "2026-07-19 09:01:58",
+                    "ip": "194.195.208.213",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Nora Mills",
+                    "email": "nora.mills@x.dummyjson.com",
+                    "time": "2026-07-22 05:16:41",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Hannah Robinson",
+                    "email": "hannah.robinson@x.dummyjson.com",
+                    "time": "2026-07-22 08:07:21",
+                    "ip": "194.195.208.213",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "moderator",
+                    "user": "Mia Rodriguez",
+                    "email": "mia.rodriguez@x.dummyjson.com",
+                    "time": "2026-07-23 12:39:52",
+                    "ip": "173.230.155.151",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Aubrey Wagner",
+                    "email": "aubrey.wagner@x.dummyjson.com",
+                    "time": "2026-07-24 00:59:48",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "user",
+                    "user": "Lucas Gray",
+                    "email": "lucas.gray@x.dummyjson.com",
+                    "time": "2026-07-24 08:27:57",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Austin Hudson",
+                    "email": "austin.hudson@x.dummyjson.com",
+                    "time": "2026-08-01 01:50:46",
+                    "ip": "173.230.155.151",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Miles Stevenson",
+                    "email": "miles.stevenson@x.dummyjson.com",
+                    "time": "2026-08-02 14:02:53",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Evan Reed",
+                    "email": "evan.reed@x.dummyjson.com",
+                    "time": "2026-08-04 11:59:16",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Madison Collins",
+                    "email": "madison.collins@x.dummyjson.com",
+                    "time": "2026-08-09 16:23:30",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Brayden Fleming",
+                    "email": "brayden.fleming@x.dummyjson.com",
+                    "time": "2026-08-10 16:21:37",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "moderator",
+                    "user": "Isabella Anderson",
+                    "email": "isabella.anderson@x.dummyjson.com",
+                    "time": "2026-08-12 23:17:22",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "user",
+                    "user": "Daniel Cook",
+                    "email": "daniel.cook@x.dummyjson.com",
+                    "time": "2026-08-13 21:24:59",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "user",
+                    "user": "Ella Adams",
+                    "email": "ella.adams@x.dummyjson.com",
+                    "time": "2026-08-14 15:05:03",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Bella Grant",
+                    "email": "bella.grant@x.dummyjson.com",
+                    "time": "2026-08-15 21:02:48",
+                    "ip": "194.195.208.213",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Elijah Stewart",
+                    "email": "elijah.stewart@x.dummyjson.com",
+                    "time": "2026-08-19 08:26:50",
+                    "ip": "185.200.116.72",
+                    "reason": "feeds: blocklistde443, blocklistde80, blocklistdeapache, ciarmy"
+                },
+                {
+                    "role": "user",
+                    "user": "Ava Harrison",
+                    "email": "ava.harrison@x.dummyjson.com",
+                    "time": "2026-08-20 12:21:50",
+                    "ip": "18.190.15.50",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "moderator",
+                    "user": "Ethan Martinez",
+                    "email": "ethan.martinez@x.dummyjson.com",
+                    "time": "2026-08-22 17:47:43",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Sofia Mitchell",
+                    "email": "sofia.mitchell@x.dummyjson.com",
+                    "time": "2026-08-24 08:58:29",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "user",
+                    "user": "Harper Kelly",
+                    "email": "harper.kelly@x.dummyjson.com",
+                    "time": "2026-08-27 17:07:56",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "user",
+                    "user": "Lily Lee",
+                    "email": "lily.lee@x.dummyjson.com",
+                    "time": "2026-08-28 05:49:56",
+                    "ip": "185.242.226.126",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Ruby Andrews",
+                    "email": "ruby.andrews@x.dummyjson.com",
+                    "time": "2026-08-28 23:59:39",
+                    "ip": "185.200.116.72",
+                    "reason": "feeds: blocklistde443, blocklistde80, blocklistdeapache, ciarmy"
+                },
+                {
+                    "role": "user",
+                    "user": "Jonathan Pierce",
+                    "email": "jonathan.pierce@x.dummyjson.com",
+                    "time": "2026-09-02 22:54:29",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Abigail Rivera",
+                    "email": "abigail.rivera@x.dummyjson.com",
+                    "time": "2026-09-03 14:16:37",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Ava Harrison",
+                    "email": "ava.harrison@x.dummyjson.com",
+                    "time": "2026-09-05 03:28:09",
+                    "ip": "79.124.59.78",
+                    "reason": "feeds: ciarmy; GreyNoise malicious"
+                },
+                {
+                    "role": "user",
+                    "user": "Mason Parker",
+                    "email": "mason.parker@x.dummyjson.com",
+                    "time": "2026-09-09 21:13:05",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Ryan Graham",
+                    "email": "ryan.graham@x.dummyjson.com",
+                    "time": "2026-09-12 22:12:20",
+                    "ip": "194.195.208.213",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Mateo Nguyen",
+                    "email": "mateo.nguyen@x.dummyjson.com",
+                    "time": "2026-09-14 05:31:52",
+                    "ip": "185.242.226.126",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Madeline Simpson",
+                    "email": "madeline.simpson@x.dummyjson.com",
+                    "time": "2026-09-14 07:05:58",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Evelyn Gonzalez",
+                    "email": "evelyn.gonzalez@x.dummyjson.com",
+                    "time": "2026-09-16 03:53:36",
+                    "ip": "52.20.198.190",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Nathan Dixon",
+                    "email": "nathan.dixon@x.dummyjson.com",
+                    "time": "2026-09-21 10:01:14",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Lucas Gray",
+                    "email": "lucas.gray@x.dummyjson.com",
+                    "time": "2026-09-21 12:40:30",
+                    "ip": "18.190.15.50",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Nicholas Bailey",
+                    "email": "nicholas.bailey@x.dummyjson.com",
+                    "time": "2026-09-24 21:20:14",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Logan Torres",
+                    "email": "logan.torres@x.dummyjson.com",
+                    "time": "2026-09-28 21:37:09",
+                    "ip": "185.242.226.126",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "moderator",
+                    "user": "Ava Taylor",
+                    "email": "ava.taylor@x.dummyjson.com",
+                    "time": "2026-09-29 23:29:32",
+                    "ip": "35.169.206.177",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Jack Ward",
+                    "email": "jack.ward@x.dummyjson.com",
+                    "time": "2026-09-29 23:48:46",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Jonathan Pierce",
+                    "email": "jonathan.pierce@x.dummyjson.com",
+                    "time": "2026-10-01 15:17:12",
+                    "ip": "185.242.226.126",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Victoria McDonald",
+                    "email": "victoria.mcdonald@x.dummyjson.com",
+                    "time": "2026-10-03 09:11:43",
+                    "ip": "52.20.198.190",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Ella Adams",
+                    "email": "ella.adams@x.dummyjson.com",
+                    "time": "2026-10-03 23:34:35",
+                    "ip": "185.200.116.72",
+                    "reason": "feeds: blocklistde443, blocklistde80, blocklistdeapache, ciarmy"
+                },
+                {
+                    "role": "user",
+                    "user": "Abigail Rivera",
+                    "email": "abigail.rivera@x.dummyjson.com",
+                    "time": "2026-10-10 03:46:24",
+                    "ip": "173.230.155.151",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Harper Turner",
+                    "email": "harper.turner@x.dummyjson.com",
+                    "time": "2026-10-17 22:08:13",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Logan Torres",
+                    "email": "logan.torres@x.dummyjson.com",
+                    "time": "2026-10-18 03:31:47",
+                    "ip": "18.190.15.50",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Hannah Robinson",
+                    "email": "hannah.robinson@x.dummyjson.com",
+                    "time": "2026-10-19 14:34:21",
+                    "ip": "185.200.116.72",
+                    "reason": "feeds: blocklistde443, blocklistde80, blocklistdeapache, ciarmy"
+                },
+                {
+                    "role": "user",
+                    "user": "Stella Hughes",
+                    "email": "stella.hughes@x.dummyjson.com",
+                    "time": "2026-10-22 05:49:35",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Max Russell",
+                    "email": "max.russell@x.dummyjson.com",
+                    "time": "2026-10-22 12:21:51",
+                    "ip": "185.242.226.126",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Ethan Fletcher",
+                    "email": "ethan.fletcher@x.dummyjson.com",
+                    "time": "2026-10-23 00:45:52",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "moderator",
+                    "user": "Ethan Martinez",
+                    "email": "ethan.martinez@x.dummyjson.com",
+                    "time": "2026-10-25 23:51:52",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Chloe Morales",
+                    "email": "chloe.morales@x.dummyjson.com",
+                    "time": "2026-10-26 06:06:38",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Harper Turner",
+                    "email": "harper.turner@x.dummyjson.com",
+                    "time": "2026-10-26 16:04:49",
+                    "ip": "104.237.150.123",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Levi Hicks",
+                    "email": "levi.hicks@x.dummyjson.com",
+                    "time": "2026-10-30 02:17:57",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Hannah Robinson",
+                    "email": "hannah.robinson@x.dummyjson.com",
+                    "time": "2026-11-02 22:54:05",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Daniel Cook",
+                    "email": "daniel.cook@x.dummyjson.com",
+                    "time": "2026-11-03 13:57:09",
+                    "ip": "185.242.226.126",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Aria Roberts",
+                    "email": "aria.roberts@x.dummyjson.com",
+                    "time": "2026-11-04 22:55:18",
+                    "ip": "18.190.15.50",
+                    "reason": "feeds: visionheight"
+                },
+                {
+                    "role": "user",
+                    "user": "Madeline Simpson",
+                    "email": "madeline.simpson@x.dummyjson.com",
+                    "time": "2026-11-05 00:35:40",
+                    "ip": "185.200.116.72",
+                    "reason": "feeds: blocklistde443, blocklistde80, blocklistdeapache, ciarmy"
+                },
+                {
+                    "role": "user",
+                    "user": "Jacob Cooper",
+                    "email": "jacob.cooper@x.dummyjson.com",
+                    "time": "2026-11-05 21:57:29",
+                    "ip": "185.242.226.126",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Hannah Robinson",
+                    "email": "hannah.robinson@x.dummyjson.com",
+                    "time": "2026-11-07 02:31:18",
+                    "ip": "194.195.208.213",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Dylan Wells",
+                    "email": "dylan.wells@x.dummyjson.com",
+                    "time": "2026-11-08 06:24:08",
+                    "ip": "185.200.116.72",
+                    "reason": "feeds: blocklistde443, blocklistde80, blocklistdeapache, ciarmy"
+                },
+                {
+                    "role": "user",
+                    "user": "Lillian Bishop",
+                    "email": "lillian.bishop@x.dummyjson.com",
+                    "time": "2026-11-08 06:45:56",
+                    "ip": "62.202.180.71",
+                    "reason": "feeds: blocklistde22, emergincompromised"
+                },
+                {
+                    "role": "user",
+                    "user": "Logan Torres",
+                    "email": "logan.torres@x.dummyjson.com",
+                    "time": "2026-11-11 00:04:53",
+                    "ip": "139.144.135.236",
+                    "reason": "ISC attack reports"
+                },
+                {
+                    "role": "user",
+                    "user": "Hannah Robinson",
+                    "email": "hannah.robinson@x.dummyjson.com",
+                    "time": "2026-11-11 05:13:02",
+                    "ip": "173.230.155.151",
+                    "reason": "ISC attack reports"
+                }
+            ]
+        }
+    },
+    {
+        "datetime": "2026-11-15 12:56:13",
+        "scenario": "failed logins",
+        "input": {
+            "threshold": 8
+        },
+        "result": {
+            "threshold": 8,
+            "users": [
+                {
+                    "user": "Emma Miller",
+                    "role": "admin",
+                    "failed_attempts": 15,
+                    "blocklisted_ips": [
+                        {
+                            "ip": "173.230.155.151",
+                            "reason": "ISC attack reports"
+                        },
+                        {
+                            "ip": "18.190.15.50",
+                            "reason": "feeds: visionheight"
+                        },
+                        {
+                            "ip": "185.242.226.126",
+                            "reason": "ISC attack reports"
+                        }
+                    ]
+                },
+                {
+                    "user": "Lily Lee",
+                    "role": "user",
+                    "failed_attempts": 8,
+                    "blocklisted_ips": [
+                        {
+                            "ip": "62.202.180.71",
+                            "reason": "feeds: blocklistde22, emergincompromised"
+                        },
+                        {
+                            "ip": "139.144.135.236",
+                            "reason": "ISC attack reports"
+                        }
+                    ]
+                },
+                {
+                    "user": "Natalie Harris",
+                    "role": "user",
+                    "failed_attempts": 10,
+                    "blocklisted_ips": [
+                        {
+                            "ip": "79.124.59.78",
+                            "reason": "feeds: ciarmy; GreyNoise malicious"
+                        },
+                        {
+                            "ip": "139.144.135.236",
+                            "reason": "ISC attack reports"
+                        },
+                        {
+                            "ip": "185.242.226.126",
+                            "reason": "ISC attack reports"
+                        }
+                    ]
+                },
+                {
+                    "user": "Benjamin Foster",
+                    "role": "user",
+                    "failed_attempts": 9,
+                    "blocklisted_ips": [
+                        {
+                            "ip": "35.169.206.177",
+                            "reason": "feeds: visionheight"
+                        },
+                        {
+                            "ip": "139.144.135.236",
+                            "reason": "ISC attack reports"
+                        }
+                    ]
+                },
+                {
+                    "user": "Max Russell",
+                    "role": "user",
+                    "failed_attempts": 9,
+                    "blocklisted_ips": [
+                        {
+                            "ip": "185.200.116.72",
+                            "reason": "feeds: blocklistde443, blocklistde80, blocklistdeapache, ciarmy"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "datetime": "2026-11-15 12:56:28",
+        "scenario": "failed logins",
+        "input": {
+            "threshold": 10
+        },
+        "result": {
+            "threshold": 10,
+            "users": [
+                {
+                    "user": "Emma Miller",
+                    "role": "admin",
+                    "failed_attempts": 15,
+                    "blocklisted_ips": [
+                        {
+                            "ip": "173.230.155.151",
+                            "reason": "ISC attack reports"
+                        },
+                        {
+                            "ip": "18.190.15.50",
+                            "reason": "feeds: visionheight"
+                        },
+                        {
+                            "ip": "185.242.226.126",
+                            "reason": "ISC attack reports"
+                        }
+                    ]
+                },
+                {
+                    "user": "Natalie Harris",
+                    "role": "user",
+                    "failed_attempts": 10,
+                    "blocklisted_ips": [
+                        {
+                            "ip": "79.124.59.78",
+                            "reason": "feeds: ciarmy; GreyNoise malicious"
+                        },
+                        {
+                            "ip": "139.144.135.236",
+                            "reason": "ISC attack reports"
+                        },
+                        {
+                            "ip": "185.242.226.126",
+                            "reason": "ISC attack reports"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "datetime": "2026-11-15 12:57:20",
+        "scenario": "period statistics",
+        "input": {
+            "start": "2026-01-01",
+            "end": "2026-01-31",
+            "role": null
+        },
+        "result": {
+            "start": "2026-01-01",
+            "end": "2026-01-31",
+            "role": null,
+            "attempts": 96,
+            "success": 53,
+            "fail": 43,
+            "fail_rate": 0.45,
+            "blocklisted_by_reason": {
+                "ISC attack reports": 15,
+                "feeds: visionheight": 5,
+                "feeds: blocklistde22, emergincompromised": 4,
+                "feeds: blocklistde443, blocklistde80, blocklistdeapache, ciarmy": 2
+            },
+            "top_users": [
+                {
+                    "user": "Abigail Rivera",
+                    "attempts": 4
+                },
+                {
+                    "user": "Ethan Fletcher",
+                    "attempts": 3
+                },
+                {
+                    "user": "Max Russell",
+                    "attempts": 3
+                },
+                {
+                    "user": "Charlotte Lopez",
+                    "attempts": 3
+                },
+                {
+                    "user": "Mia Rodriguez",
+                    "attempts": 3
+                }
+            ],
+            "inactive_accounts": [
+                {
+                    "id": 4,
+                    "user": "James Davis",
+                    "role": "admin"
+                },
+                {
+                    "id": 8,
+                    "user": "Ava Taylor",
+                    "role": "moderator"
+                },
+                {
+                    "id": 9,
+                    "user": "Ethan Martinez",
+                    "role": "moderator"
+                },
+                {
+                    "id": 13,
+                    "user": "Noah Hernandez",
+                    "role": "moderator"
+                },
+                {
+                    "id": 16,
+                    "user": "Avery Perez",
+                    "role": "user"
+                },
+                {
+                    "id": 20,
+                    "user": "Jackson Evans",
+                    "role": "user"
+                },
+                {
+                    "id": 21,
+                    "user": "Madison Collins",
+                    "role": "user"
+                },
+                {
+                    "id": 22,
+                    "user": "Elijah Stewart",
+                    "role": "user"
+                },
+                {
+                    "id": 26,
+                    "user": "Evelyn Gonzalez",
+                    "role": "user"
+                },
+                {
+                    "id": 31,
+                    "user": "Gabriel Adams",
+                    "role": "user"
+                },
+                {
+                    "id": 36,
+                    "user": "Harper Turner",
+                    "role": "user"
+                },
+                {
+                    "id": 37,
+                    "user": "Mason Parker",
+                    "role": "user"
+                },
+                {
+                    "id": 38,
+                    "user": "Aria Roberts",
+                    "role": "user"
+                },
+                {
+                    "id": 39,
+                    "user": "Lucas Gray",
+                    "role": "user"
+                },
+                {
+                    "id": 42,
+                    "user": "Avery Carter",
+                    "role": "user"
+                },
+                {
+                    "id": 43,
+                    "user": "Benjamin Foster",
+                    "role": "user"
+                },
+                {
+                    "id": 46,
+                    "user": "Hannah Robinson",
+                    "role": "user"
+                },
+                {
+                    "id": 50,
+                    "user": "Stella Hughes",
+                    "role": "user"
+                },
+                {
+                    "id": 57,
+                    "user": "Nathan Dixon",
+                    "role": "user"
+                },
+                {
+                    "id": 58,
+                    "user": "Bella Grant",
+                    "role": "user"
+                },
+                {
+                    "id": 60,
+                    "user": "Lillian Simmons",
+                    "role": "user"
+                },
+                {
+                    "id": 61,
+                    "user": "Mason Pearson",
+                    "role": "user"
+                },
+                {
+                    "id": 65,
+                    "user": "Caleb Perkins",
+                    "role": "user"
+                },
+                {
+                    "id": 67,
+                    "user": "Gabriel Hayes",
+                    "role": "user"
+                },
+                {
+                    "id": 70,
+                    "user": "Zoe Nicholson",
+                    "role": "user"
+                },
+                {
+                    "id": 74,
+                    "user": "Penelope Harper",
+                    "role": "user"
+                },
+                {
+                    "id": 76,
+                    "user": "Madeline Simpson",
+                    "role": "user"
+                },
+                {
+                    "id": 77,
+                    "user": "Jonathan Pierce",
+                    "role": "user"
+                },
+                {
+                    "id": 83,
+                    "user": "Dylan Wells",
+                    "role": "user"
+                },
+                {
+                    "id": 91,
+                    "user": "Levi Hicks",
+                    "role": "user"
+                },
+                {
+                    "id": 92,
+                    "user": "Autumn Gomez",
+                    "role": "user"
+                },
+                {
+                    "id": 93,
+                    "user": "Julian Newton",
+                    "role": "user"
+                },
+                {
+                    "id": 97,
+                    "user": "Oscar Powers",
+                    "role": "user"
+                },
+                {
+                    "id": 98,
+                    "user": "Clara Berry",
+                    "role": "user"
+                }
+            ]
+        }
+    },
+    {
+        "datetime": "2026-11-15 12:57:55",
+        "scenario": "period statistics",
+        "input": {
+            "start": "2026-01-01",
+            "end": "2026-01-31",
+            "role": "admin"
+        },
+        "result": {
+            "start": "2026-01-01",
+            "end": "2026-01-31",
+            "role": "admin",
+            "attempts": 5,
+            "success": 2,
+            "fail": 3,
+            "fail_rate": 0.6,
+            "blocklisted_by_reason": {
+                "feeds: blocklistde22, emergincompromised": 1
+            },
+            "top_users": [
+                {
+                    "user": "Emma Miller",
+                    "attempts": 2
+                },
+                {
+                    "user": "Sophia Brown",
+                    "attempts": 1
+                },
+                {
+                    "user": "Michael Williams",
+                    "attempts": 1
+                },
+                {
+                    "user": "Emily Johnson",
+                    "attempts": 1
+                }
+            ],
+            "inactive_accounts": [
+                {
+                    "id": 4,
+                    "user": "James Davis",
+                    "role": "admin"
+                }
+            ]
+        }
+    }
+]
